@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.9.1/g' package/base-files/files/bin/config_generate
 
 # Modify luci-app-passwall dependency from v2ray-plugin to xray-plugin
 # find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-passwall/Makefile" | xargs -i sed -i 's/v2ray-plugin/xray-plugin/g' {}
